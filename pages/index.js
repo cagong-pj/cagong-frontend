@@ -34,14 +34,14 @@ const Home = () => {
                 <div>상수동</div>
             </Row>
             <Row type='flex' justify='center' style={{ marginTop: '30px' }}>
-                <Col span={6} type="flex" align="middle"><Hashtag tagTitle={"콘센트가 많아요"}/></Col>
-                <Col span={6} type="flex" align="middle"><Hashtag tagTitle={"조용해요"}/></Col>
-                <Col span={6} type="flex" align="middle"><Hashtag tagTitle={"책상이 넓어요"}/></Col>
+                <Col span={6} type="flex" align="middle"><Hashtag tagImage={'plugin'} tagText={"콘센트가 많아요"}/></Col>
+                <Col span={6} type="flex" align="middle"><Hashtag tagImage={'mute'} tagText={"조용해요"}/></Col>
+                <Col span={6} type="flex" align="middle"><Hashtag tagImage={'table'} tagText={"책상이 넓어요"}/></Col>
             </Row>
             <Row type='flex' justify='center' style={{ marginBottom: '30px' }}>
-                <Col span={6} type="flex" align="middle"><Hashtag tagTitle={"눈치가 덜 보여요"}/></Col>
-                <Col span={6} type="flex" align="middle"><Hashtag tagTitle={"자리가 편해요"}/></Col>
-                <Col span={6} type="flex" align="middle"><Hashtag tagTitle={"눈이 편해요"}/></Col>
+                <Col span={6} type="flex" align="middle"><Hashtag tagImage={'eyes'} tagText={"눈치가 덜 보여요"}/></Col>
+                <Col span={6} type="flex" align="middle"><Hashtag tagImage={'chair'} tagText={"자리가 편해요"}/></Col>
+                <Col span={6} type="flex" align="middle"><Hashtag tagImage={'light'} tagText={"눈이 편해요"}/></Col>
             </Row>
             <Row type='flex' justify='left'>
                 <Col xs={24} md={12}>

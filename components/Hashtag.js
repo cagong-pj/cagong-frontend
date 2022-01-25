@@ -7,28 +7,33 @@ const TagWrapper = styled.div`
     margin: 10px 0 10px 0;
 `;
 
-const TagIcon = styled.button`
+const TagIcon = styled.div`
     border: none;
     border-radius: 50px;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     background: #163800;
     color: #ffffff;
     margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
-const TagTitle = styled.div`
+const TagText = styled.div`
     font-size: 14px;
     letter-spacing: -0.5px;
 `;
 
 // margin 상 우 하 좌
 
-const Hashtag = ({ tagTitle }) => {
+const Hashtag = ({ tagText, tagImage }) => {
     return(
         <TagWrapper>
-            <TagIcon>아이콘</TagIcon>
-            <TagTitle>{tagTitle}</TagTitle>
+            <TagIcon>
+                <img src={`/images/icon_${tagImage}.png`} width='40px' />
+            </TagIcon>
+            <TagText>{tagText}</TagText>
         </TagWrapper>
     );
 };
